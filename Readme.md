@@ -1,8 +1,6 @@
 # Pirple Course Assignments
 
-> Continuing Education for Software Engineers
-
-<a href="https://pirple.thinkific.com/" target="_blank"><img src="https://s3.amazonaws.com/thinkific-import/116598/cYiInJ14QTexS1zdpeTV_logo5.png" style="height:30px;"></a>
+![PIRPLE](https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/40252557_1101536866667589_7194468742225461248_o.png?_nc_cat=107&_nc_ht=scontent-mad1-1.xx&oh=5f22c70c9178f1237aa0c79ca2276152&oe=5D31E43E)
 
 ## Frontend Fundamentals
 
