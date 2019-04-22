@@ -1,0 +1,113 @@
+<!--
+ * Homework #7: The DOM
+ * Keeping Up With the Javascripts - Part 1: ES6
+ * Pirple
+ * Alejandro Mohamad
+-->
+
+<!--
+Create a very simple webpage, displaying some of your favorite colors. Use HTML, CSS and Javascript.
+
+1. The top of the page should include a header <h1> tag, with a name for
+   your page, and then an <h2> tag with a description of what's on the page.
+2. Further down the page you should draw 10 rectangles, of any size you wish,
+   and give them each a unique hex-code so they all appear as different colors.
+3. Below each rectangles, list the hex code (in plain text).
+4. Give all of the rectangles the same class, but make sure each rectangle has a unique ID.
+5. Wrap all of the rectangles in an containing element ( a <div> ) and give that
+   element the id "rectangleWrapper". Now give that element 50 pixels of padding on
+   its top, right and left sides. But add zero padding to the bottom.
+6. When the page loads, console.log the messages "Here are the rectangle IDs" and
+   then console.log all the rectangles' IDs, one at a time.
+7. In the <head> of the document, add a <title> tag that matches the text in the <h1> you added in step 1.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Favorite Colors</title>
+
+    <style>
+      #rectangleWrapper {
+        padding: 50px 50px 0 50px;
+      }
+
+      .rectangle {
+        height: 100px;
+      }
+
+      #crimson {
+        background-color: #DC143C;
+      }
+      #hot-pink {
+        background-color: #FF69B4;
+      }
+      #coral {
+        background-color: #FF7F50;
+      }
+      #moccasin {
+        background-color: #FFE4B5;
+      }
+      #orchid {
+        background-color: #DA70D6;
+      }
+      #olive {
+        background-color: #808000;
+      }
+      #light-sea-green {
+        background-color: #20B2AA;
+      }
+      #steel-blue {
+        background-color: #4682B4;
+      }
+      #wheat {
+        background-color: #F5DEB3;
+      }
+      #maroon {
+        background-color: #800000;
+      }
+    </style>
+  </head>
+  <body onload="displayIDs()">
+
+    <h1>My Favorite Colors</h1>
+    <h2>Here are my favorite colors.</h2>
+
+    <div id="rectangleWrapper">
+      <div class="rectangle" id="crimson"></div>
+      <p>#DC143C</p>
+      <div class="rectangle" id="hot-pink"></div>
+      <p>#FF69B4</p>
+      <div class="rectangle" id="coral"></div>
+      <p>#FF7F50</p>
+      <div class="rectangle" id="moccasin"></div>
+      <p>#FFE4B5</p>
+      <div class="rectangle" id="orchid"></div>
+      <p>#DA70D6</p>
+      <div class="rectangle" id="olive"></div>
+      <p>#808000</p>
+      <div class="rectangle" id="light-sea-green"></div>
+      <p>#20B2AA</p>
+      <div class="rectangle" id="steel-blue"></div>
+      <p>#4682B4</p>
+      <div class="rectangle" id="wheat"></div>
+      <p>#F5DEB3</p>
+      <div class="rectangle" id="maroon"></div>
+      <p>#800000</p>
+    </div>
+
+    <script>
+    function displayIDs() {
+      console.log("Here are the rectangle IDs");
+
+      const wrapper = document.getElementById("rectangleWrapper");
+      const rectangles = wrapper.getElementsByClassName("rectangle");
+
+      for (const rectangle of rectangles) {
+        console.log(rectangle.id);
+      }
+    }
+    </script>
+  </body>
+</html>

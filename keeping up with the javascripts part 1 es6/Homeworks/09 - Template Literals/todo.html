@@ -1,0 +1,43 @@
+<!--
+ * Homework #9: Template Literals
+ * Keeping Up With the Javascripts - Part 1: ES6
+ * Pirple
+ * Alejandro Mohamad
+-->
+
+<!--
+For this assignment, return to Project #1 and upgrade your code
+to use template literals. That is, specifically:
+
+1. Modify your pages so that all of the HTML within the <body> is written by
+   Javascript (rather than hardcoded onto the page).
+2. Break all your HTML into separate Javascript templates, using template
+   literals.
+3. Make sure that any variables that appear are not harcoded, but are presented
+   via those template literals. Keep your templates free of as much text and
+   numbers as possible, pushing all that data into variables instead.
+
+Extra Credit
+============
+In addition to template-izing the <body> see if you can do so for the some of
+the <head> tags like the <title> and various pieces of meta data.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>To-Do Lists</title>
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body onload="startProjectCode()">
+    <div id="app">
+      <h1>To-Do App</h1>
+      <h2>All your lists in one place</h2>
+
+      <div id="content"></div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

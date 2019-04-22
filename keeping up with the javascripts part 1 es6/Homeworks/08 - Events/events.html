@@ -1,0 +1,69 @@
+<!--
+ * Homework #8: Events
+ * Keeping Up With the Javascripts - Part 1: ES6
+ * Pirple
+ * Alejandro Mohamad
+-->
+
+<!--
+Your assignment is to create a tic-tac-toe game out of HTML, CSS and Javascript.
+You should have a single HTML page, one accompanying JS file, and one accompanying CSS file.
+
+1. When the page loads, only the game board should be displayed (draw the game
+   board any way you see fit).
+2. When a user clicks within the game board (in an empty space) their mark
+   (either "X" or "O" should appear there). "X" goes first. So the first valid
+   click on the game board should produce an "X". The second should produce an
+   "O", and then they should trade off.
+3. The "X" s should be red, and the "O"s should be black.
+4. If someone wins (gets three in a row), you should make a dialog box appear
+   on the screen that says either "X has won!" or "O has won!" And when the
+   dialog box is closed, the game should be reset to its beginning state.
+5. If all the areas of the board get filled but nobody wins, a dialog box
+   appear on the screen that says either "Cats game!" And when the dialog box
+   is closed, the game should be reset to its beginning state.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="events.css">
+  </head>
+  <body>
+    <div id="game-board">
+      <div class="box" id="top-left">
+        <span class="empty">.</span>
+      </div>
+      <div class="box" id="top-middle">
+        <span class="empty">.</span>
+      </div>
+      <div class="box" id="top-right">
+        <span class="empty">.</span>
+      </div>
+      <br>
+      <div class="box" id="center-left">
+        <span class="empty">.</span>
+      </div>
+      <div class="box" id="center-middle">
+        <span class="empty">.</span>
+      </div>
+      <div class="box" id="center-right">
+        <span class="empty">.</span>
+      </div>
+      <br>
+      <div class="box" id="bottom-left">
+        <span class="empty">.</span>
+      </div>
+      <div class="box" id="bottom-middle">
+        <span class="empty">.</span>
+      </div>
+      <div class="box" id="bottom-right">
+        <span class="empty">.</span>
+      </div>
+    </div>
+
+    <script src="events.js"></script>
+  </body>
+</html>

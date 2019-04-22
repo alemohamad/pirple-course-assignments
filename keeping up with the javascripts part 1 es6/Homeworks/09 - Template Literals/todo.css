@@ -1,0 +1,147 @@
+body {
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 64px;
+  line-height: 0px;
+  text-align: center;
+}
+h2 {
+  font-size: 22px;
+  background-color: #3f3f3f;
+  color: white;
+  max-width: 350px;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  display: block;
+  margin: 30px auto;
+}
+h3 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: black;
+  margin: 40px 70px;
+}
+
+a {
+  color: grey;
+}
+
+.button {
+  background-color: #cccccc;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #666666;
+}
+
+.logout {
+  background-color: salmon;
+}
+
+.login:hover {
+  background-color: deepskyblue;
+}
+.signup:hover {
+  background-color: goldenrod;
+}
+
+.hide {
+  display: none;
+}
+
+#app {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#intro {
+  text-align: center;
+}
+
+#logged {
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+#logged p {
+  margin: -10px 0 30px;
+  font-size: 16px;
+}
+
+form input {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  width: 100%;
+}
+form input[type=checkbox] {
+  display: inline;
+  width: auto;
+}
+form button {
+  display: block;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#signup {
+
+}
+
+#login {
+
+}
+
+#dashboard {
+  line-height: 24px;
+}
+
+#list {
+
+}
+#list ul {
+  list-style-type: circle;
+  line-height: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  padding: 20px 40px;
+  margin: 50px 0;
+  border-radius: 5px;
+}
+#list ul li.done {
+  list-style-type: disc;
+  text-decoration: line-through;
+  font-weight: bold;
+  color: limegreen;
+}
+
+#settings {
+
+}

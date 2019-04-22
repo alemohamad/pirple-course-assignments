@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My favorite food: Classic Pancakes</title>
+
+    <style>
+      #document {
+        background-color: lightgray;
+      }
+
+      .text-content {
+        font-size: 32px;
+      }
+
+      .title {
+        padding-bottom: 30px;
+      }
+
+      #big-title {
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 50px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .recipe-photo {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 30px;
+        border: 5px solid white;
+      }
+
+      .ingredients {
+        list-style: none;
+      }
+
+      .ingredients li:before {
+        content: "✏️";
+        padding-right: 10px;
+      }
+
+      .steps {
+        list-style-type: upper-roman;
+      }
+
+      p > span {
+        font-style: italic;
+      }
+
+      p > span:last-child {
+        text-decoration: underline;
+      }
+
+      .span-no-styles {
+        font-style: normal;
+        text-decoration: none;
+      }
+
+      .list-groups {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .list-groups section {
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 20px 5px;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      #list-ingredients {
+        width: 350px;
+        background-color: #991f0f;
+      }
+
+      #list-steps {
+        width: 350px;
+        background-color: #123456;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .list-groups {
+          width: 100%;
+        }
+
+        .list-groups section {
+          color: black;
+          border-radius: 0;
+          margin: 0;
+          box-shadow: none;
+        }
+
+        #list-steps, #list-ingredients {
+          background-color: white;
+        }
+
+        .recipe-photo {
+          border-radius: 0;
+          max-width: 100%;
+          width: 100%;
+          border: 0;
+        }
+
+        .another-recipes {
+          display: none;
+        }
+      }
+
+      @media only screen and (min-width: 401px) and (max-width: 750px) {
+        #document {
+          background-color: white;
+          margin: 0 20px;
+        }
+      }
+
+      @media only screen and (min-width: 750px) {
+        #document {
+          margin: 0 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body id="document">
+    <!-- Name of the dish -->
+    <h1 class="title" id="big-title">Classic Pancakes</h1>
+
+    <!-- Description of the dish -->
+    <p class="text-content">
+      This is a <span class="span-no-styles">basic</span>, <span>no-fail</span> pancake recipe.
+      Made from <span>basic ingredients</span> that you can <span>always</span> find in your kitchen.
+    </p>
+
+    <div class="list-groups">
+      <section id="list-ingredients">
+        <h2 class="title center">List of ingredients</h2>
+
+        <!-- List of ingredients -->
+        <ul class="ingredients">
+          <li>200 grams all purpose flour</li>
+          <li>4 tbsp butter melted</li>
+          <li>2 tbsp sugar granulated</li>
+          <li>1 tbsp baking powder</li>
+          <li>1/2 tsp salt</li>
+          <li>1 egg</li>
+          <li>300 ml milk warm</li>
+          <li>1 tsp vanilla</li>
+          <li>Pancake syrup <em>optional</em></li>
+          <li>Whipped cream <em>optional</em></li>
+        </ul>
+      </section>
+
+      <section id="list-steps">
+        <h2 class="title center">Steps of the recipe</h2>
+
+        <!-- Steps of the recipe -->
+        <ol class="steps">
+          <li>Mix all dry ingredients in a bowl. 🥣</li>
+          <li>In another bowl mix milk with egg and melted butter. 🥚 🥛</li>
+          <li>Pour the milk mixture into the dry ingredients and mix using a fork to remove big lumps (DO NOT over mix).</li>
+          <li>Lightly brush a frying pan with piece of butter. Using a 1/4 measuring cup spoon the batter and spread it into a circle. 🍳</li>
+          <li>When bubbles appear on your pancake, turn over. Cook until pancake is lightly brown and cooked in the middle. 👨‍🍳</li>
+          <li>Drizzle with maple syrup and serve. 🥞</li>
+        </ol>
+      </section>
+    </div>
+
+    <!-- Describe what the dish should look, smell and taste like -->
+    <p class="text-content">
+      These classic, simple, light, soft and fluffy pancakes are not too sweet and are lightly scented with vanilla.
+    </p>
+
+    <!-- An image of the dish -->
+    <p>
+      <img src="http://3.bp.blogspot.com/-cm1HGFJRm6w/UrS3oL5r4XI/AAAAAAAAAZA/XiZ0r1pX0aU/s1600/Pancake.jpg" alt="Stack of pancakes"
+      class="recipe-photo" />
+    </p>
+
+    <section class="another-recipes">
+      <h2 class="title">Another favorite recipes</h2>
+
+      <ul>
+        <li><a href="https://www.yummly.com/recipe/Tuna-Pasta-Bake-2220753">Tuna Pasta Bake</a></li>
+        <li><a href="https://www.yummly.com/recipe/Reese_s-Peanutbutter-Bars-1171293">Reese's Peanutbutter Bars</a></li>
+        <li><a href="https://www.yummly.com/recipe/New-York-Style-Pizza-2137630">New York Style Pizza</a></li>
+        <li><a href="https://www.yummly.com/recipe/Roasted-Sweet-Potato-and-Carrot-Soup-2246904">Roasted Sweet Potato and Carrot Soup</a></li>
+        <li><a href="https://www.yummly.com/recipe/Almond-Crusted-Fish-with-Wild-Rice-Salad-2315405">Almond Crusted Fish with Wild Rice Salad</a></li>
+      </ul>
+    </section>
+
+    <!-- Website that lists out all the various css properties -->
+    <!-- https://www.w3schools.com/cssref/ -->
+
+  </body>
+</html>

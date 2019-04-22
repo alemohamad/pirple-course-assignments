@@ -1,0 +1,372 @@
+html, .view body { background-color: #000; counter-reset: slideidx; }
+  body, .view section {
+    background-color: #fff; border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3f3f3f;
+  }
+
+  section.black {
+    background-color: #3f3f3f;
+    color: #fff;
+  }
+
+  section.blue {
+    background-color: #4FA5CB;
+    color: #fff;
+  }
+
+  section.orange {
+    background-color: #f05138;
+    color: #fff;
+  }
+
+  section.yellow {
+    background-color: #e2cb1d;
+    color: #000;
+  }
+
+  section, .view head > title {
+      font-size: 2rem;
+  }
+
+  .view section:after {
+    counter-increment: slideidx;
+    content: counter(slideidx, decimal-leading-zero);
+    position: absolute; bottom: -80px; right: 100px;
+    color: white;
+  }
+
+  .view head > title {
+    color: white;
+    text-align: center;
+    margin: 1em 0 1em 0;
+  }
+
+  h1 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 1em;
+    text-align: left;
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  h1 small,
+  h2 small {
+    display: block;
+    font-size: 2.5rem;
+    color: #8c8c8c;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  h2,
+  .middle,
+  span.bgtext {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  h1 small span {
+    display: block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 50px;
+  }
+
+  h2 small span {
+    padding-top: 10px;
+    display: block;
+    font-size: 2.2rem;
+  }
+
+  .middle {
+    margin: 0 !important;
+    padding: 0 35px;
+    font-size: 2.7rem;
+  }
+
+  span.bgtext {
+    font-family: 'Comfortaa', cursive;
+    display: block;
+    font-size: 35rem;
+    z-index: -99999;
+    color: #e8e8e8;
+    font-weight: 700;
+  }
+
+  section > h3 {
+    margin: 100px 50px 50px 50px;
+    font-weight: 600;
+    font-size: 3.0rem;
+  }
+
+  section.profile h2 {
+    background: url('images/alemohamad_swift.svg') no-repeat;
+    background-size: auto 90px;
+    background-position: center top;
+    padding-top: 90px;
+  }
+
+  pre {
+    overflow: hidden;
+    font-size: 1.5rem;
+    margin: 40px auto;
+    padding: 20px 40px;
+    border: 0px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3f3f3f;
+    width: 700px;
+    text-align: left;
+  }
+
+  ul, ol {
+      margin: 0 70px;
+  }
+
+  .no-bullet {
+    list-style: none;
+    text-align: center;
+  }
+
+  li > ul, ol {
+      margin: 0 0 15px 50px;
+      list-style-image: none; /* in case parent list has some */
+  }
+
+  mark.next:not([active]) {
+    visibility: visible; /* override the default behavior where next is hidden */
+    background-color: inherit; /* and disable highlighting instead */
+  }
+
+  p {
+    margin: 0px 75px 0 75px;
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+  p:first-child {
+    margin: 75px 75px 0 75px;
+  }
+
+  .gist {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(50%, -50%, 0);
+    width: 700px;
+  }
+  .gist-file
+  .gist-data {max-height: 500px;}
+
+  a {
+    color: inherit;
+    font-weight: normal;
+  }
+  a.resource {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9d9d9d;
+    border: 3px solid #9d9d9d;
+    display: inline-block;
+    padding: .8em 2em;
+    font-size: .6em;
+    line-height: 1em;
+    margin: .5em 0;
+    -webkit-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+    cursor: pointer;
+    font-weight: 600;
+    min-width: 100px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  a.resource:hover {
+    background: #fff;
+    color: #9d9d9d;
+  }
+
+  table {
+    margin: auto;
+    font-size:2.5rem;
+    text-align: center;
+  }
+
+  blockquote {
+    height: 100%;
+    background-color: #3f3f3f;
+    color: white;
+    font-size: 3.75rem;
+    padding: 100px 50px 50px;
+  }
+  blockquote:before {
+    content: '“';
+  }
+  blockquote:after {
+    content: '”';
+  }
+  .quote-source {
+    display: block;
+    color: white;
+    font-size: 2.75rem;
+    padding: 20px 50px 50px;
+    z-index: 9999;
+    position: absolute;
+    bottom: 20px;
+    font-weight: 200;
+  }
+  .quote-source:before {
+    content: '– ';
+  }
+
+  /* Figures are displayed full-page, with the caption
+     on top of the image/video */
+  figure {
+    background-color: #3f3f3f;
+    margin:0;
+    height:100%;
+    overflow:hidden;
+  }
+  figure > * {
+    position: absolute;
+  }
+  figure > img, figure > video {
+    min-height:100%;
+    min-width:100%;
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 1);
+  }
+
+  #logo {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 9999;
+  }
+  #logo > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @keyframes hexagonAnimation {
+    0% { transform: rotate(0deg) scale(0); }
+    3% { transform: rotate(185deg) scale(1.1); }
+    4%, 91% { transform: rotate(180deg) scale(1); }
+    92% { transform: rotate(185deg) scale(1.1); }
+    95%, 100% { transform: rotate(0deg) scale(0); }
+  }
+  @keyframes lettersAnimation {
+    0%, 1% { transform: scale(0); }
+    3% { transform: scale(1.1); }
+    4%, 91% { transform: scale(1); }
+    92% { transform: scale(1.2); }
+    94%, 100% { transform: scale(0); }
+  }
+  .am-hexagon {
+    animation: hexagonAnimation 20s ease-in-out infinite;
+    transform-origin: center;
+  }
+  .am-letters {
+    animation: lettersAnimation 20s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  .icon-talk {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 1.5em;
+    left: 2.5em;
+  }
+  .icon-talk img {
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    background-color: #F3F4F8;
+    border-bottom: 1px solid #CCC;
+  }
+
+  footer {
+    background-color: #F3F4F8;
+    border-top: 1px solid #CCC;
+    padding-bottom: 4px; /* remember progress bar */
+  }
+
+  section footer {
+    padding: 10px;
+  }
+
+  .red {
+    color: #db4545;
+  }
+  .green {
+    color: #39aa56;
+  }
+  .blue {
+    color: #4FA5CB;
+  }
+  .yellow {
+    color: #cdb62c;
+  }
+
+  /* Transition effect */
+  /* Feel free to change the transition effect for original
+     animations. See here:
+     https://developer.mozilla.org/en/CSS/CSS_transitions
+     How to use CSS3 Transitions: */
+  section {
+    transition: left 400ms linear 0s;
+  }
+  .view section {
+    transition: none;
+  }
+
+  .view section[aria-selected] {
+    border: 5px red solid;
+  }
+
+  .top-image img {
+    width: 100%;
+  }
+
+@media screen {
+  /* Before */
+  section { left: -150%; }
+  /* Now */
+  section[aria-selected] { left: 0; }
+  /* After */
+  section[aria-selected] ~ section { left: +150%; }
+}
+
+  /* The progressbar, at the bottom of the slides, show the global
+     progress of the presentation. */
+  #progress-bar {
+    height: 3px;
+    background: #4FA5CB;
+  }
