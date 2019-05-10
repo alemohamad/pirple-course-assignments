@@ -37,3 +37,5 @@
 * **Project 2**
 * **Homework 12** `Object Oriented Programming`
 * **Homework 13** `Classes`
+* **Project 3**
+* **Homework 14** `Callbacks and Promises`
