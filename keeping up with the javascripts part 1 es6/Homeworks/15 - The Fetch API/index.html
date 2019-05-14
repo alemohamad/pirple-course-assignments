@@ -1,0 +1,54 @@
+<!--
+ * Homework #15: The Fetch API
+ * Keeping Up With the Javascripts - Part 1: ES6
+ * Pirple
+ * Alejandro Mohamad
+-->
+
+<!--
+1. Build an empty page with a button that says "fetch data"
+2. When that button is clicked, fetch data from the API you chose above,
+   and display it on your webpage in any way you see fit.
+3. Above the fetched data, display a button that says "refresh data".
+4. When the refresh button is clicked, wipe the current (displayed) data
+   from the screen and replace it with newly fetch data from the API.
+5. If your request fails at any point, display a popup alert that says
+   "sorry, we couldn't access the API". Hint: To test this functionality,
+   try using your new website with your internet connection turned off!
+
+Extra Credit:
+Include an HTML form on your page that allows you to POST data to the API
+in question (after a submit button is clicked). To complete this you'll
+have to choose your API carefully.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Homework #15 - The Fetch API</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div>
+      <button id="fetch">Fetch data</button>
+
+      <p id="loading">Loading...</p>
+      <div id="results"></div>
+      <p id="resultsTotal"></p>
+
+      <hr>
+
+      <form action="#" id="newPostForm">
+          <input type="text" name="name" id="nameForm" placeholder="Name">
+          <input type="number" name="salary" id="salaryForm" placeholder="Salary">
+          <input type="number" name="age" id="ageForm" placeholder="Age">
+          <button type="submit">Create new employee</button>
+        </form>
+        <pre id="postedResult"></pre>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 60px;
+}
+
+h1, h3 {
+  color: #8c5fd3;
+  margin-top: 0;
+}
+h3 {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 3px solid #8c5fd3;
+  border-radius: 5px;
+}
+
+table {
+  margin-top: 20px;
+  text-align: center;
+}
+table th {
+  padding: 5px;
+  color: #8c5fd3;
+  font-size: 1.5em;
+}
+table td {
+  background: #8c5fd3;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+}
+
+.triggered {
+  font-weight: bold;
+  background: #5e3c96;
+  min-width: 150px;
+}

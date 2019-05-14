@@ -1,0 +1,36 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 100px;
+}
+#results {
+  height: 200px;
+  width: 650px;
+  overflow: auto;
+  display: block;
+  padding: 20px;
+  margin: 20px 0;
+  border: 6px solid #c8c8c8;
+  border-radius: 10px;
+}
+pre {
+  background: #eee;
+  padding: 15px;
+  display: none;
+}
+.employee {
+  display: inline-block;
+  border-bottom: 2px solid black;
+}
+small {
+  font-weight: 200;
+  font-size: .5em;
+}
+hr {
+  background: #c8c8c8;
+  margin: 20px 0;
+  border: none;
+  height: 6px;
+  width: 700px;
+  border-radius: 3px;
+}

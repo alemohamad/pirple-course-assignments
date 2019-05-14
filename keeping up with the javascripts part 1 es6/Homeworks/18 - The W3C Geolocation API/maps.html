@@ -1,0 +1,39 @@
+<!--
+ * Homework #18: The W3C Geolocation API
+ * Keeping Up With the Javascripts - Part 1: ES6
+ * Pirple
+ * Alejandro Mohamad
+-->
+
+<!--
+1. Prompt the user to allow the use of Geolocation API.
+2. If the user allows the API, use the Google maps API
+   to display a large map of their current area, with
+   a pin on their exact location.
+3. If the user doesn't allow the API, display an error
+   message on the page instead.
+
+Extra Credit:
+Instead of showing a pin of their current location,
+show the user driving directions from their current
+location to the nearest library.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Homework #18 - The W3C Geolocation API</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>Pirple Geolocation</h1>
+
+    <button id="find-me">Show best walking route to nearest library</button><br/>
+    <p id="status"></p>
+    <p id="map-iframe"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

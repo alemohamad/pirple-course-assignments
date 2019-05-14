@@ -39,3 +39,8 @@
 * **Homework 13** `Classes`
 * **Project 3**
 * **Homework 14** `Callbacks and Promises`
+* **Homework 15** `The Fetch API`
+* **Project 4**
+* **Homework 16** `Rest and Spread`
+* **Homework 17** `The Notifications API`
+* **Homework 18** `The W3C Geolocation API`
