@@ -46,3 +46,16 @@
 * **Homework 18** `The W3C Geolocation API`
 * **Homework 19** `Build Tools`
 * **Homework 20** `Final Exam Proposal`
+
+## Get Swifty - Part 1
+
+![Get Swifty - Part 1](https://img.shields.io/badge/Get_Swifty-Part_1-d35f5f.svg)
+![Completed](https://img.shields.io/badge/-Finished-brightgreen.svg)
+
+* **Homework 1** `Variables and Constants`
+* **Homework 2** `Collections`
+* **Homework 3** `Control Flow`
+* **Homework 4** `Functions`
+* **Homework 5** `Classes, Structs and Enums`
+* **Homework 6** `Xcode`
+* **Final Exam** `Share Your Knowledge`
