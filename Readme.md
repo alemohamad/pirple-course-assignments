@@ -44,3 +44,5 @@
 * **Homework 16** `Rest and Spread`
 * **Homework 17** `The Notifications API`
 * **Homework 18** `The W3C Geolocation API`
+* **Homework 19** `Build Tools`
+* **Homework 20** `Final Exam Proposal`

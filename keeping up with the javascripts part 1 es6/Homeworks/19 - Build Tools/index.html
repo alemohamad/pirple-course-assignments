@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Build Tools for JavaScript</title>
+
+  <!-- Your Style -->
+  <!-- Define the style of your presentation -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,500,600' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet'>
+  <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <link href='../slides.default.css' rel='stylesheet'>
+  <link href='../slides.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<div id="logo">
+  <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 353 400" overflow="visible" style="overflow: visible;"><g fill="none" fill-rule="evenodd"><path class="am-hexagon" d="M176.4 399.6c-6.4 0-12.4-1.5-17.1-4.2L17 312.4A37.4 37.4 0 0 1 0 282.8v-166c0-11 7.5-24 17-29.7L159.3 4.2a34.3 34.3 0 0 1 17-4.2c6.4 0 12.5 1.5 17.1 4.2l142.2 83a37.4 37.4 0 0 1 17.1 29.6v166c0 11-7.5 24-17 29.6l-142.2 83a34.2 34.2 0 0 1-17 4.2" fill="#4FA5CB"></path><path class="am-letters" d="M290.7 236c0 2.4-.8 4.4-2.4 6a8 8 0 0 1-6 2.5 8 8 0 0 1-5.8-2.5 8.2 8.2 0 0 1-2.4-6v-45.4a19.6 19.6 0 0 0-11.6-17.4 18.5 18.5 0 0 0-14.8 0 18.7 18.7 0 0 0-11.6 17.4V236c0 2.3-.8 4.3-2.5 6a8 8 0 0 1-5.8 2.4c-2.4 0-4.4-.8-6-2.5a8.1 8.1 0 0 1-2.4-6v-45.4a19.6 19.6 0 0 0-11.6-17.4 18.4 18.4 0 0 0-20.8 4 19.2 19.2 0 0 0-5.5 13.4V236c0 2.3-.8 4.3-2.5 6a8 8 0 0 1-5.9 2.4c-2.3 0-4.3-.8-6-2.5a8.1 8.1 0 0 1-2.3-6v-72.8a8 8 0 0 1 2.4-5.8 8 8 0 0 1 5.9-2.5c1.8 0 3.5.5 5 1.6 1.4 1 2.4 2.4 2.9 4a36.3 36.3 0 0 1 34.5-2.5c4.6 2.2 8.7 5.4 12.3 9.6a34.9 34.9 0 0 1 41-9.8 36.5 36.5 0 0 1 19 19c2 4.3 2.9 9 2.9 13.8V236zM106.7 171.6a27.2 27.2 0 0 0-20 8.3 28.6 28.6 0 0 0-8 19.8c0 3.8.7 7.5 2.1 10.9a28.5 28.5 0 0 0 14.9 15c3.4 1.4 7 2.2 11 2.2a27 27 0 0 0 19.9-8.4 28.9 28.9 0 0 0 8.2-19.7 28.9 28.9 0 0 0-17.1-25.8 27 27 0 0 0-11-2.3m28 64.6v-1.6a45.8 45.8 0 0 1-28 9.9c-12.4 0-23-4.4-31.7-13.1a43.1 43.1 0 0 1-13-31.7c0-12.4 4.3-23 13-31.7a43.1 43.1 0 0 1 31.7-13c12.3 0 22.8 4.3 31.7 13a43.2 43.2 0 0 1 13 31.7v36.5a8 8 0 0 1-2.4 5.8 8 8 0 0 1-5.8 2.5c-2.4 0-4.4-.8-6-2.5a8 8 0 0 1-2.4-5.8" fill="#FFF"></path></g></svg>
+</div>
+
+<!-- Your Slides -->
+<!-- One section is one slide -->
+
+<section>
+    <h1>
+      Build Tools for JavaScript
+      <small>
+        Ale Mohamad
+        <span style="color: #f7df1f;">#Browserify #webpack #Grunt #gulpjs #BuildTools #JavaScript</span>
+      </small>
+    </h1>
+    <div class="icon-talk">
+      <img src="images/javascript.svg">
+    </div>
+</section>
+
+<section class="profile">
+    <h2>
+      Ale Mohamad
+      <small>
+        Software Developer
+        <span class="blue">@alemohamad</span>
+      </small>
+    </h2>
+</section>
+
+<section>
+    <h2>
+      Building JavaScript apps
+      <small>
+        It sounds cool, but why do we need them?
+      </small>
+    </h2>
+</section>
+
+<section>
+    <p>
+      Working on application development, there are repetitive tasks that take a long time to do them manually. We must automate these tasks, to be able to focus on the creation of our project. There are several tools that perform these tasks for us.
+    </p>
+    <p>
+      An advantage of using these tools is that it improves the performance of our application, our code is cleaner, the result code occupies less space, and at the same time help verify that we comply with the best coding practices. Also we save working time, by not having to deal with those tasks.
+    </p>
+</section>
+
+<section class="yellow">
+  <h2>Module bundlers</h2>
+</section>
+
+<section>
+    <p class="middle">
+      Most projects of any scale will have their code split between a number of files. And while you <i>could</i> just include each file with an individual <code>&lt;script&gt;</code> tag, you <i>should</i> use a tool to automatically bundle everything into a single file.
+    </p>
+</section>
+
+<section>
+    <h2>
+      <img src="images/browserify.png" style="height: 200px;">
+      <pre>
+$ npm install -g browserify
+$ browserify src/dev.js -o dist/script.js</pre>
+      <small>
+        <a href="http://browserify.org" target="_blank">browserify.org</a>
+      </small>
+    </h2>
+</section>
+
+<section>
+  <script src="https://gist.github.com/alemohamad/f10f5818af3180b68948d88dd03611b5.js"></script>
+</section>
+
+<section>
+  <p>
+    <b>Browserify</b> is a tool for bundling Node packages for the browser.
+  </p>
+  <p>
+    This Node-centric philosophy has a number of benefits; bundling an app with <b>Browserify</b> is simple, you can using built-in Node modules like path, and you can use any code you’ve written for Node as is. The downside, of course, is that your Single Page App will generally need types of resources that Node apps won’t: CSS, images and fonts.
+  </p>
+</section>
+
+<section>
+  <p>
+    There are some plugins to handle all this, but using them to do something it wasn’t designed for the configuration file can get very messy and hard to maintain.
+  </p>
+  <p>
+    While <b>Browserify</b> is a wonderful and easy to use tool for bundling node modules for the browser, if you’re writing a Single Page App then you may prefer a tool designed for bundling anything, not just JavaScript code.
+  </p>
+</section>
+
+<section>
+    <h2>
+      <img src="images/webpack.png" style="height: 130px;">
+      <pre>
+$ npm install -g webpack
+$ webpack src/dev.js dist/script.js</pre>
+      <small>
+        <a href="https://webpack.js.org" target="_blank">webpack.js.org</a>
+      </small>
+    </h2>
+</section>
+
+<section>
+  <script src="https://gist.github.com/alemohamad/881d3473abf1c6da2ccf4be81f97eeee.js"></script>
+</section>
+
+<section>
+  <p>
+    <b>Webpack</b> is a tool which takes JavaScript modules with dependencies and bundles them into files. It doesn’t care what dependencies they are, as long as they are JavaScript modules.
+  </p>
+  <p>
+    But for <b>Webpack</b> this means thinking about other files like CSS and Images as resource files.
+  </p>
+</section>
+
+<section>
+  <p>
+    Also with <b>Webpack</b> we can chain resources, which lets you do things like transforming your SCSS files to CSS first, and then transforming your CSS into a JavaScript module. It's magic!
+  </p>
+  <p>
+    Personally, the biggest downside of <b>Webpack</b> is that you are going to get enormous configuration files to do more than the basic tasks, and that is not very appealing to developers.
+  </p>
+</section>
+
+<section class="yellow">
+  <h2>Task runners</h2>
+</section>
+
+<section>
+    <p class="middle">
+      Task runners are tools for defining and running tasks.<br>
+      This means that anything you might manually do on the command line, it is done automatically.
+    </p>
+</section>
+
+<section>
+    <h2>
+      <img src="images/grunt.png" style="height: 200px;">
+      <pre>
+$ npm install -g grunt-cli
+$ grunt</pre>
+      <small>
+        <a href="https://gruntjs.com" target="_blank">gruntjs.com</a>
+      </small>
+    </h2>
+</section>
+
+<section>
+  <script src="https://gist.github.com/alemohamad/4dd749296542d7f1d18192647a72a6a1.js"></script>
+</section>
+
+<section>
+  <p>
+    <b>Grunt</b> can’t do anything out of the box, because it’s a tool for running tasks that you should define. But for them to work it need to add configuration objects handled by plugins: from watching for changes to copying and concatenating files.
+  </p>
+  <p>
+    Its advantage is that there are thousands of plugins available, and you can always find one which does what you want. The big issue is that if you want to do something unusual, you can’t just write a plugin with plain JavaScript. Instead you’ll have to write your own plugin, which is not easy.
+  </p>
+</section>
+
+<section>
+    <h2>
+      <img src="images/gulp.png" style="height: 200px;">
+      <pre>
+$ npm install -g gulp-cli
+$ gulp</pre>
+      <small>
+        <a href="https://gulpjs.com" target="_blank">gulpjs.com</a>
+      </small>
+    </h2>
+</section>
+
+<section>
+  <script src="https://gist.github.com/alemohamad/79ba208735cf4d58cc1a9150ac73f5bb.js"></script>
+</section>
+
+<section>
+  <p>
+    <b>Gulp</b> is also a tool for defining and running tasks, but it defines tasks as JavaScript functions that return streams and promises, so you have a lot of flexibility in how you write your tasks.
+  </p>
+  <p>
+    <b>Gulp</b> also has a massive plugin library, but because its tasks are just plain functions, you’ll find you can also use a lot of vanilla node modules for those tasks too.
+  </p>
+  <p>
+    The biggest issue that <b>Gulp</b> has is that streams and promises can be hard to understand at first, but when you do, it will allow you to better apply custom tasks across your other code too.
+  </p>
+</section>
+
+<section class="yellow">
+  <h2>Some thoughts</h2>
+</section>
+
+<section>
+  <p>
+    Currently there are many other build tools for JavaScript projects, but the ones we review here are the 4 most used. In fact, the option that I like most at the moment is <b>Gulp</b>, although the adoption of <b>Webpack</b> is growing a lot in the last time.
+  </p>
+  <p>
+    It all depends on the size of the project you have or the tool that the framework you are using already provides (or the system that the team which you are going to work with uses), we have different options to choose from.
+  </p>
+</section>
+
+<section>
+  <p class="middle">
+    My personal opinion is that <b>Gulp</b> is the best option if you have a project without a lot of code, and to choose <b>Webpack</b> if it's a monstrous project with a lot of code and files that must be managed.<br><br><span class="next">Or even <u>use both</u>, because you can combine the module bundler tool with the task runner to automatize your development repetitive tasks!</span>
+  </p>
+</section>
+
+<section>
+    <h2>
+      Thank you!
+      <small>
+        talks.alemohamad.com/js-build-tools
+      </small>
+    </h2>
+</section>
+
+<!-- {{{{ dzslides core
+#
+#
+#     __  __  __       .  __   ___  __
+#    |  \  / /__` |    | |  \ |__  /__`
+#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
+#
+#
+# The following block of code is not supposed to be edited.
+# But if you want to change the behavior of these slides,
+# feel free to hack it!
+#
+-->
+
+<div id="progress-bar"></div>
+
+<script src="../dzslides.js"></script>
+
+</body>
+</html>
