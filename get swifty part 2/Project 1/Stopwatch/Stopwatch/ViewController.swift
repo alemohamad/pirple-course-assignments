@@ -8,6 +8,8 @@
 
 /**
  * Project #1: Build a Stopwatch
+ * Get Swifty - Part 2
+ * Pirple
  *
  * Your assignment is to build a stopwatch app:
  * 1. When opened it should display a blank screen with a "start" button
@@ -107,4 +109,3 @@ class ViewController: UIViewController {
 enum counterStatuses {
     case start, stop, resume, reset
 }
-

@@ -8,6 +8,8 @@
 
 /**
  * Project #2: Build a Metric to Imperial Converter
+ * Get Swifty - Part 2
+ * Pirple
  *
  * Your assignment is to build a Metric to Imperial app:
  * 1. When opened it should display a title, welcome message, and a dropdown

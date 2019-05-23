@@ -67,3 +67,4 @@
 
 * **Project 1** `Build a Stopwatch`
 * **Project 2** `Build a Metric to Imperial Converter`
+* **Project 3** `Card-Counter`
