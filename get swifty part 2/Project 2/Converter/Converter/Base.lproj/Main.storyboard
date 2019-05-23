@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQg-Zq-k06">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppj-tF-VfB">
+                                <rect key="frame" x="0.0" y="181" width="414" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="yh0-rD-I6H"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bQh-Pc-5MO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ezx-W7-dP5"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivt-Yw-S4y">
+                                <rect key="frame" x="40" y="391" width="334" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofK-gW-2CX">
+                                <rect key="frame" x="127" y="321" width="160" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5BA-Jn-hPy"/>
+                                    <constraint firstAttribute="width" constant="160" id="hsG-cd-WHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNl-ps-SPq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-I2-dD8">
+                                <rect key="frame" x="40" y="128" width="334" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ppj-tF-VfB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2AM-LB-5ce"/>
+                            <constraint firstItem="ofK-gW-2CX" firstAttribute="top" secondItem="Ppj-tF-VfB" secondAttribute="bottom" constant="20" id="9rH-W3-wff"/>
+                            <constraint firstItem="ofK-gW-2CX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="D0O-ry-pWm"/>
+                            <constraint firstItem="Ppj-tF-VfB" firstAttribute="top" secondItem="uqQ-I2-dD8" secondAttribute="bottom" constant="20" id="Hq2-Ur-2Th"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ivt-Yw-S4y" secondAttribute="trailing" constant="40" id="SRQ-k3-BT7"/>
+                            <constraint firstItem="ivt-Yw-S4y" firstAttribute="top" secondItem="ofK-gW-2CX" secondAttribute="bottom" constant="30" id="Tdd-x0-4Uf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uqQ-I2-dD8" secondAttribute="trailing" constant="40" id="c4F-HX-tw4"/>
+                            <constraint firstItem="Ppj-tF-VfB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dpU-k3-pTo"/>
+                            <constraint firstItem="uqQ-I2-dD8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="m46-lM-mwv"/>
+                            <constraint firstItem="uqQ-I2-dD8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ucR-eZ-zed"/>
+                            <constraint firstItem="ivt-Yw-S4y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ySj-uj-UCl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qer-Y7-zT0">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Nf1-NF-hOa">
+                            <rect key="frame" x="87.5" y="7" width="239" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Weight"/>
+                                <segment title="Length"/>
+                                <segment title="Volume"/>
+                                <segment title="Temp."/>
+                            </segments>
+                            <connections>
+                                <action selector="changedMeasure:" destination="BYZ-38-t0r" eventType="valueChanged" id="kKH-UE-JRo"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="originalValueTextField" destination="uqQ-I2-dD8" id="XS2-4V-d8t"/>
+                        <outlet property="resultLabel" destination="ivt-Yw-S4y" id="wr5-Ga-U3v"/>
+                        <outlet property="selectorPickerView" destination="Ppj-tF-VfB" id="Yd8-jM-17x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="763"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rqV-wc-JAf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hQg-Zq-k06" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ja-Ha-sbn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AzQ-T7-oiF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rL-zW-7ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="762.72321428571422"/>
+        </scene>
+    </scenes>
+</document>

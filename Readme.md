@@ -59,3 +59,11 @@
 * **Homework 5** `Classes, Structs and Enums`
 * **Homework 6** `Xcode`
 * **Final Exam** `Share Your Knowledge`
+
+## Get Swifty - Part 2
+
+![Get Swifty - Part 2](https://img.shields.io/badge/Get_Swifty-Part_2-ff7f2a.svg)
+![In progress](https://img.shields.io/badge/-Studying-blueviolet.svg)
+
+* **Project 1** `Build a Stopwatch`
+* **Project 2** `Build a Metric to Imperial Converter`
