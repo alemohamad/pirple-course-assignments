@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yJo-sg-QTo">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card-Counter Poker-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CC_Poker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="L6A-E2-qhd">
+                                <rect key="frame" x="40" y="289" width="334" height="438.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7SA-iW-mYu">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="66.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rju-ac-VUg">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0n-C9-mnr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRq-rr-b9Z">
+                                                        <rect key="frame" x="0.0" y="25.5" width="167" height="41"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="55D-W8-vkN">
+                                                <rect key="frame" x="167" y="0.0" width="167" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Bet?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyr-Q7-aVU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↑↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1v-jX-fVj">
+                                                        <rect key="frame" x="0.0" y="25.5" width="167" height="41"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="TSU-Zr-TqL">
+                                        <rect key="frame" x="0.0" y="106.5" width="334" height="115.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dealt Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67a-IZ-Pvs">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="sko-QZ-Jel">
+                                                <rect key="frame" x="0.0" y="45.5" width="334" height="70"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHI-vH-GBk" customClass="RoundButton" customModule="CC_Poker" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="AFX-CD-ZGS"/>
+                                                            <constraint firstAttribute="width" constant="70" id="fPX-RI-UMh"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                        <state key="normal" title="2-6"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                                <color key="value" red="0.30980392156862746" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="35"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="dealHighTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PjQ-T2-izL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iih-Wi-seC" customClass="RoundButton" customModule="CC_Poker" customModuleProvider="target">
+                                                        <rect key="frame" x="132" y="0.0" width="70" height="70"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="QlY-TY-X2i"/>
+                                                            <constraint firstAttribute="height" constant="70" id="cmb-zH-a9C"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                        <state key="normal" title="7-9"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="35"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="dealNeutralTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOg-2x-c0d"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRA-Jz-TkY" customClass="RoundButton" customModule="CC_Poker" customModuleProvider="target">
+                                                        <rect key="frame" x="264" y="0.0" width="70" height="70"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="4UH-sM-4Be"/>
+                                                            <constraint firstAttribute="width" constant="70" id="AEv-JZ-Dp5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                        <state key="normal" title="10-A"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="35"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                                <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="dealLowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXN-EY-H9g"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYz-Bo-qL7">
+                                        <rect key="frame" x="0.0" y="262" width="334" height="76.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="64"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdG-N4-Jgj" customClass="RoundButton" customModule="CC_Poker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="378.5" width="334" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="cjb-Nd-MoX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <state key="normal" title="New Deck"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.36862745098039218" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="newDeckTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZW-3j-UgP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6A-E2-qhd" secondAttribute="trailing" constant="40" id="gSk-gK-z2E"/>
+                            <constraint firstItem="L6A-E2-qhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="weS-VP-Bl1"/>
+                            <constraint firstItem="L6A-E2-qhd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="zst-IO-FW7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WCg-54-6DI" appends="YES" id="Noi-br-iMh"/>
+                            <outletCollection property="gestureRecognizers" destination="yCe-bn-dff" appends="YES" id="EB8-DS-VTf"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Card-Counter Poker" prompt="♠️ ♥️ ♣️ ♦️" id="JGt-zV-Z1H">
+                        <barButtonItem key="rightBarButtonItem" title="How to" id="9BL-nD-knQ">
+                            <connections>
+                                <action selector="howToTapped:" destination="BYZ-38-t0r" id="2Ky-jQ-OmO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="betAmountLabel" destination="B1v-jX-fVj" id="JkK-yy-1BZ"/>
+                        <outlet property="cardsHighButton" destination="zHI-vH-GBk" id="7cA-Yx-wvY"/>
+                        <outlet property="cardsLowButton" destination="LRA-Jz-TkY" id="6Z0-hw-LRl"/>
+                        <outlet property="cardsNeutralButton" destination="iih-Wi-seC" id="vRQ-od-mCV"/>
+                        <outlet property="hitStayLabel" destination="CYz-Bo-qL7" id="gEC-hY-lqP"/>
+                        <outlet property="newDeckButton" destination="WdG-N4-Jgj" id="5Va-Sg-yNd"/>
+                        <outlet property="runningCountLabel" destination="FRq-rr-b9Z" id="IO0-4L-S1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="WCg-54-6DI">
+                    <connections>
+                        <action selector="swipeDownHide:" destination="BYZ-38-t0r" id="aPp-PS-qTz"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="yCe-bn-dff">
+                    <connections>
+                        <action selector="swipeUpShow:" destination="BYZ-38-t0r" id="k3P-YQ-Zmy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="119.86607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Xe-lZ-oi4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yJo-sg-QTo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eH8-lE-0lb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Qo-hq-R4y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4p-5g-AN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="120"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
