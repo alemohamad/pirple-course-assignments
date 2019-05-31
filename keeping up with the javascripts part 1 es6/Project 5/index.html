@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Convert Text to Binary</title>
+  <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+  <style>
+    .container {
+      max-width: 800px;
+    }
+    textarea {
+      width: 80%;
+      height: 20rem;
+    }
+    img {
+      height: 34px;
+      margin-top: 35px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container center">
+    <div>
+      <h3>Convert Text to Binary</h3>
+
+      <form id="convertForm">
+        <div class="row">
+          <div class="col">
+            <label>Insert original text</label>
+            <textarea id="text" placeholder="Text"></textarea>
+          </div>
+          <div class="col">
+            <label>Get result in binary</label>
+            <textarea id="binary" placeholder="Binary" readonly></textarea>
+          </div>
+        </div>
+        <button type="submit">Convert</button>
+        <button type="button" class="copyBtn outline" data-clipboard-target="#binary">Copy result to clipboard</button>
+      </form>
+
+      <img src="https://talks.alemohamad.com/am.svg" alt="Ale Mohamad">
+
+      <p><small>Design made with the <a href="https://kbrsh.github.io/wing/" target="_blank">Wing CSS framework</a>.</small></p>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+  <script>
+    const convert2Binary = (text) => {
+      let result = "";
+
+      for (let i = 0; i < text.length; i++) {
+        result += text[i].charCodeAt(0).toString(2) + " ";
+      }
+
+      return result;
+    };
+
+    document.getElementById("convertForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let text = document.getElementById("text");
+      let binary = document.getElementById("binary");
+      let result = convert2Binary(text.value);
+      binary.value = result;
+    });
+
+    new ClipboardJS('.copyBtn');
+  </script>
+</body>
+</html>
